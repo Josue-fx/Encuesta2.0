@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encuesta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('Sabía que dirías que si, ahora ya somos novios mi amor <3');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px"; 
+            
+
+        } 
+    </script>
+</head>
+<body>
+    <h3>¿Quieres ser mi novia?</h3> 
+
+<style>
+    h3 {
+        font-size: 75px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 2;
+        margin: 25px 300px;
+    } 
+</style>
+
+
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+    <div class="contenedor-galeria">
+        <img src="Image1.jpg" alt="" class="galeria__img1"></div>
+        <img src="Image2.jpg" alt="" class="galeria__img2"></div>
+        <img src="Image3.jpg" alt="" class="galeria__img3"></div>
+        <img src="Image4.jpg" alt="" class="galeria__img4"></div>
+        <img src="Image5.png" alt="" class="galeria__img5"></div>
+        <img src="Image6.png" alt="" class="galeria__img6"></div>
+        <img src="Image7.png" alt="" class="galeria__img7"></div>
+        <img src="Image8.png" alt="" class="galeria__img8"></div>
+
+
+
+    </div>
+
+<style>
+    input {
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 2;
+        margin: 50px 10px;
+        height: 60px;
+        width: 60px;
+    }
+    img {
+        border-style: none;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+</style> 
+
+<style>
+
+    .contendero-galeria{
+        position: relative;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .galeria__img1{
+        width: 600px;
+        position: absolute;
+        border-radius: 30px;
+        top: 250px;
+        right: 30px;
+    }
+
+    .galeria__img2{
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        border-radius: 30px;
+        bottom: 15px;
+    }
+
+    .galeria__img3{
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        border-radius: 30px;
+        left: 500px;
+        top: 475px;
+    }
+
+    .galeria__img4{
+        width: 500px;
+        position: absolute;
+        border-radius: 30px;
+        right: 675px;
+        top:150px;
+    }
+
+    .galeria__img5{
+        width: 200px;
+        position: absolute;
+        top: 30px;
+        left: 45px;
+    
+    }
+
+    .galeria__img6{
+        width: 200px;
+        position: absolute;
+        right: 150px;
+        top: 30px;
+
+    }
+
+    .galeria__img7{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 250px;
+        top:450px;
+
+    }
+
+    .galeria__img8{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 650px;
+        top: 450px;
+    }
+</style>
+
+</body>
+</html>
